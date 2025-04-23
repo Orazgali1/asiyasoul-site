@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AsiyaSoul — Ресторан восточной души, где встречаются вкусы Японии, Китая и Казахстана.">
+  <title>AsiyaSoul — Ресторан восточной души</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-black text-white p-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl font-bold tracking-wide">AsiyaSoul</h1>
+    <nav class="hidden md:flex space-x-4">
+      <a href="about.html" class="hover:text-yellow-400">О нас</a>
+      <a href="menu.html" class="hover:text-yellow-400">Меню</a>
+      <a href="gallery.html" class="hover:text-yellow-400">Галерея</a>
+      <a href="contact.html" class="hover:text-yellow-400">Контакты</a>
+    </nav>
+    <button class="md:hidden flex flex-col space-y-1" onclick="toggleMenu()">
+      <span class="w-6 h-0.5 bg-white"></span>
+      <span class="w-6 h-0.5 bg-white"></span>
+      <span class="w-6 h-0.5 bg-white"></span>
+    </button>
+  </header>
+  <div id="mobile-menu" class="md:hidden hidden bg-black text-white text-center py-4 space-y-2">
+    <a href="about.html" class="block hover:text-yellow-400">О нас</a>
+    <a href="menu.html" class="block hover:text-yellow-400">Меню</a>
+    <a href="gallery.html" class="block hover:text-yellow-400">Галерея</a>
+    <a href="contact.html" class="block hover:text-yellow-400">Контакты</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center bg-no-repeat min-h-[90vh] flex items-center justify-center text-center px-4" style="background-image: url('images/ooo.png');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 text-white max-w-3xl">
+      <h2 class="text-3xl md:text-5xl font-semibold mb-6 leading-tight">Вкус, рожденный на пересечении миров</h2>
+      <p class="text-base md:text-xl mb-8">
+        В AsiyaSoul мы объединили <span class="text-yellow-300 font-semibold">японскую изысканность</span>,
+        <span class="text-yellow-300 font-semibold">китайскую мудрость</span> и
+        <span class="text-yellow-300 font-semibold">корейскую кухню</span>, чтобы каждое блюдо стало историей,
+        рассказанной языком ароматов, текстур и эмоций.
+      </p>
+      <a href="menu.html">
+        <button class="px-6 py-3 bg-yellow-500 text-black rounded-full hover:bg-yellow-400 transition-transform transform hover:scale-105 shadow-md">
+          Исследовать меню
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="bg-white py-20 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">О ресторане</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-6">
+      AsiyaSoul — это симфония вкусов Востока: японская элегантность, китайская гармония и корейская энергия. Мы создаём атмосферу, где каждый гость чувствует тепло восточной души.
+    </p>
+    <a href="about.html">
+      <button class="px-6 py-3 bg-black text-white rounded-full hover:bg-yellow-500 hover:text-black transition duration-300 ease-in-out transform hover:scale-105">
+        Подробнее о нас
+      </button>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-4 mt-auto">
+    © 2025 AsiyaSoul. Все права защищены.
+  </footer>
+
+</body>
+</html>

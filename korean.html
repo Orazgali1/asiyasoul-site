@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корейская кухня — AsiyaSoul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fadeIn {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-orange-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-black text-white p-6 flex flex-wrap md:flex-nowrap justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl md:text-2xl font-bold tracking-wide w-full md:w-auto text-center md:text-left mb-4 md:mb-0">AsiyaSoul</h1>
+    <nav class="flex flex-wrap justify-center md:justify-end gap-4 w-full md:w-auto">
+      <a href="index.html" class="hover:text-yellow-400 transition">Главная</a>
+      <a href="about.html" class="hover:text-yellow-400 transition">О нас</a>
+      <a href="menu.html" class="hover:text-yellow-400 transition font-semibold text-yellow-400">Меню</a>
+      <a href="gallery.html" class="hover:text-yellow-400 transition">Галерея</a>
+      <a href="contact.html" class="hover:text-yellow-400 transition">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Навигатор между меню -->
+  <div class="bg-yellow-100 text-gray-800 py-4 px-4 md:px-6 text-center shadow-inner">
+    <p class="mb-2 font-semibold text-lg">Выберите кухню:</p>
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
+      <a href="japanese.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Японская</a>
+      <a href="chinese.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Китайская</a>
+      <a href="korean.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Корейская</a>
+      <a href="drinks.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Напитки</a>
+    </div>
+  </div>
+
+  <!-- Титул -->
+  <section class="text-center py-10 fadeIn">
+    <h2 class="text-4xl font-bold mb-2">Корейская кухня</h2>
+    <p class="text-lg text-gray-600">Попробуйте аутентичные корейские блюда с насыщенным вкусом и уникальной подачей</p>
+  </section>
+
+  <!-- Блюда -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pb-20 max-w-7xl mx-auto fadeIn">
+    <!-- Блоки блюд вставлены сюда -->
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://cdn.pixabay.com/photo/2022/11/24/02/06/kimchi-7613323_1280.jpg" alt="Кимчи" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Кимчи</h3>
+      <p class="mb-2">Острая квашеная капуста с перцем и чесноком — основа корейской кухни.</p>
+      <p class="text-lg font-bold text-yellow-700">₸1800</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://images.pexels.com/photos/12973148/pexels-photo-12973148.jpeg" alt="Бибимбап" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Бибимбап</h3>
+      <p class="mb-2">Рис с овощами, мясом, яйцом и острым соусом кочуджан.</p>
+      <p class="text-lg font-bold text-yellow-700">₸3200</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://images.pexels.com/photos/9181653/pexels-photo-9181653.jpeg" alt="Самгёпсаль" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Самгёпсаль</h3>
+      <p class="mb-2">Жареная свинина с чесноком и кунжутом, подаётся с листьями салата.</p>
+      <p class="text-lg font-bold text-yellow-700">₸3500</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://images.pexels.com/photos/18283713/pexels-photo-18283713.jpeg" alt="Ттокпокки" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Ттокпокки</h3>
+      <p class="mb-2">Рисовые клёцки в пряном сладко-остром соусе.</p>
+      <p class="text-lg font-bold text-yellow-700">₸2900</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://cdn.pixabay.com/photo/2017/06/26/13/58/chicken-2443901_1280.jpg" alt="Чимэк" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Чимэк</h3>
+      <p class="mb-2">Хрустящая жареная курица, подаётся с пивом (у нас — с лимонадом).</p>
+      <p class="text-lg font-bold text-yellow-700">₸3400</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://cdn.pixabay.com/photo/2014/08/26/15/24/sausage-428067_1280.jpg" alt="Сундэ" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Сундэ</h3>
+      <p class="mb-2">Традиционная кровяная колбаса с лапшой и специями.</p>
+      <p class="text-lg font-bold text-yellow-700">₸2800</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.ru8qPZyCNwO8KhvOEqVL7gHaHa?w=474&h=474&c=7" alt="Джапчхэ" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Джапчхэ</h3>
+      <p class="mb-2">Обжаренная лапша из батата с овощами и мясом в соевом соусе.</p>
+      <p class="text-lg font-bold text-yellow-700">₸3000</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://cdn.pixabay.com/photo/2022/08/25/17/40/spare-ribs-7410906_1280.jpg" alt="Кальби" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Кальби</h3>
+      <p class="mb-2">Маринованные говяжьи рёбра, жареные на гриле.</p>
+      <p class="text-lg font-bold text-yellow-700">₸4000</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.w1EC_gK-hQ9H6XM_MtvlYgHaFo&w=360&h=360&c=7" alt="Хе из осьминога" class="w-full h-56 object-cover rounded-xl mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Хе из осьминога</h3>
+      <p class="mb-2">Пряный маринованный осьминог с острым соусом, чесноком и овощами.</p>
+      <p class="text-lg font-bold text-yellow-700">₸3700</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center p-6 mt-12">
+    <p>&copy; 2025 AsiyaSoul. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>

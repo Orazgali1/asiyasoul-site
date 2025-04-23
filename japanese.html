@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Меню японской кухни ресторана AsiyaSoul. Наслаждайтесь популярными блюдами Японии, такими как суши, темпура и многое другое." />
+  <title>Японская кухня — AsiyaSoul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .dish-img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-black text-white p-4 flex flex-wrap md:flex-nowrap justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl md:text-2xl font-bold tracking-wide w-full md:w-auto text-center md:text-left mb-4 md:mb-0">AsiyaSoul</h1>
+    <nav class="flex flex-wrap justify-center md:justify-end gap-4 w-full md:w-auto">
+      <a href="index.html" class="hover:text-yellow-400 transition">Главная</a>
+      <a href="about.html" class="hover:text-yellow-400 transition">О нас</a>
+      <a href="menu.html" class="hover:text-yellow-400 transition font-semibold text-yellow-400">Меню</a>
+      <a href="gallery.html" class="hover:text-yellow-400 transition">Галерея</a>
+      <a href="contact.html" class="hover:text-yellow-400 transition">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Навигатор между меню -->
+  <div class="bg-yellow-100 text-gray-800 py-4 px-4 md:px-6 text-center shadow-inner">
+    <p class="mb-2 font-semibold text-lg">Выберите кухню:</p>
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
+      <a href="japanese.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Японская</a>
+      <a href="chinese.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Китайская</a>
+      <a href="korean.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Корейская</a>
+      <a href="drinks.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Напитки</a>
+    </div>
+  </div>
+
+  <!-- Section: Japanese Dishes -->
+  <section class="py-16 px-4 md:px-6 bg-gray-100 flex-grow">
+    <div class="max-w-7xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Японская кухня 🍣</h2>
+      <p class="text-gray-600">Откройте для себя изысканные вкусы Японии — от суши до мисо-супа.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://images.pexels.com/photos/10311486/pexels-photo-10311486.jpeg" alt="Суши" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Суши 🍣</h3>
+        <p class="text-gray-700 mb-2">Классические японские суши с рыбой, рисом и водорослями нори.</p>
+        <p class="text-yellow-600 font-semibold">1200 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://cdn.pixabay.com/photo/2024/06/18/07/13/ramen-8837174_1280.png" alt="Рамен" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Рамен 🍜</h3>
+        <p class="text-gray-700 mb-2">Традиционный суп с лапшой, мясом и яйцом. Восточное наслаждение.</p>
+        <p class="text-yellow-600 font-semibold">1500 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://cdn.pixabay.com/photo/2023/02/01/03/50/fish-7759503_1280.jpg" alt="Сашими" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Сашими 🐟</h3>
+        <p class="text-gray-700 mb-2">Свежая рыба, подаётся с васаби и соевым соусом.</p>
+        <p class="text-yellow-600 font-semibold">1700 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://cdn.pixabay.com/photo/2020/08/15/04/22/shrimp-tempura-5489578_1280.jpg" alt="Темпура" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Темпура 🍤</h3>
+        <p class="text-gray-700 mb-2">Хрустящие морепродукты и овощи в кляре.</p>
+        <p class="text-yellow-600 font-semibold">1400 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://images.pexels.com/photos/8983006/pexels-photo-8983006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Унаги Дон" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Унаги Дон 🍚</h3>
+        <p class="text-gray-700 mb-2">Рис с угрем в соусе терияки. Богатый вкус.</p>
+        <p class="text-yellow-600 font-semibold">1600 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://cdn.pixabay.com/photo/2020/03/11/08/11/food-4921368_1280.jpg" alt="Такояки" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Такояки 🐙</h3>
+        <p class="text-gray-700 mb-2">Шарики с осьминогом, обжаренные до румяности.</p>
+        <p class="text-yellow-600 font-semibold">1300 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://cdn.pixabay.com/photo/2015/05/02/01/04/miso-soup-749368_1280.jpg" alt="Мисо-суп" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Мисо-суп 🍲</h3>
+        <p class="text-gray-700 mb-2">Суп с мисо, тофу, водорослями и луком.</p>
+        <p class="text-yellow-600 font-semibold">600 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://cdn.pixabay.com/photo/2020/03/08/08/09/food-4911747_1280.jpg" alt="Гёдза" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Гёдза 🥟</h3>
+        <p class="text-gray-700 mb-2">Жареные японские пельмени с сочной начинкой.</p>
+        <p class="text-yellow-600 font-semibold">1000 KZT</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="https://images.pexels.com/photos/31302286/pexels-photo-31302286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Онигири" class="dish-img rounded-xl mb-4">
+        <h3 class="text-2xl font-semibold mb-2">Онигири 🍙</h3>
+        <p class="text-gray-700 mb-2">Рисовые шарики с разными начинками.</p>
+        <p class="text-yellow-600 font-semibold">800 KZT</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6 text-sm">
+    © 2025 AsiyaSoul. Все права защищены. <br>
+    Создано с душой и стилем — <span class="text-yellow-400 font-semibold">Нургалиев Оразгали</span>.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>О нас | AsiyaSoul</title>
+  <meta name="description" content="AsiyaSoul — место, где встречаются японская элегантность, китайская философия и казахское гостеприимство." />
+  <meta property="og:title" content="О нас | AsiyaSoul" />
+  <meta property="og:description" content="AsiyaSoul — кулинарная философия трёх культур." />
+  <meta property="og:image" content="https://i.pinimg.com/736x/27/49/8a/27498a491471f1ae8042dc6251e030b5.jpg" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-thumb { background-color: #facc15; border-radius: 10px; }
+    .about-bg { background-image: url('images/ggg.png'); background-size: cover; background-position: center; }
+    .fadeIn { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+    .nav-link-active { color: #facc15; }
+    body { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+<header class="bg-black text-white p-4 flex flex-wrap md:flex-nowrap justify-between items-center sticky top-0 z-50 shadow-md">
+  <h1 class="text-xl md:text-2xl font-bold tracking-wide w-full md:w-auto text-center md:text-left mb-4 md:mb-0">AsiyaSoul</h1>
+  <nav class="flex flex-wrap justify-center md:justify-end gap-4 w-full md:w-auto">
+    <a href="index.html" class="hover:text-yellow-400 transition">Главная</a>
+    <a href="about.html" class="hover:text-yellow-400 nav-link-active transition">О нас</a>
+    <a href="menu.html" class="hover:text-yellow-400 transition">Меню</a>
+    <a href="gallery.html" class="hover:text-yellow-400 transition">Галерея</a>
+    <a href="contact.html" class="hover:text-yellow-400 transition">Контакты</a>
+  </nav>
+</header>
+
+<section class="relative about-bg min-h-[70vh] md:min-h-screen py-24 px-6 flex items-center justify-center">
+  <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"></div>
+  <div class="relative z-10 max-w-3xl text-center text-white fadeIn">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6">О нас</h1>
+    <p class="text-base md:text-lg leading-relaxed">
+      В сердце <span class="text-yellow-400 font-semibold">AsiyaSoul</span> соединяются 
+      <span class="text-yellow-300">Японская утончённость</span>, 
+      <span class="text-red-400">Китайская гармония</span> и 
+      <span class="text-green-300">Корейская острота</span>.  Мы создаём атмосферу, в которой каждый гость чувствует тепло восточной души. <br><br>
+      Наша кухня — это путешествие сквозь ароматы, вкусы и традиции трёх великих культур, приправленное современным взглядом и любовью к деталям.
+    </p>
+  </div>
+</section>
+
+<section class="bg-white py-16 px-4 md:px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+    <div class="transition-transform hover:scale-105 duration-300" data-aos="fade-up">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png" alt="Japan Elegance" class="w-24 h-24 object-cover rounded-full shadow-lg mx-auto mb-4 border-4 border-red-200">
+      <h3 class="text-xl font-semibold mb-2">Японская элегантность</h3>
+      <p class="text-gray-600">Чистота линий, сезонные мотивы, внимание к подаче — как в церемонии чайной гармонии.</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Корейский флаг" class="w-24 h-24 object-cover rounded-full shadow-lg mx-auto mb-4 border-4 border-yellow-300">
+      <h3 class="text-xl font-semibold mb-2">Корейская красота</h3>
+      <p class="text-gray-600">Как символ красоты блюд и их подачи и для любителей остроты в жизни.</p>
+    </div>
+    <div class="transition-transform hover:scale-105 duration-300" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" alt="Chinese Harmony" class="w-24 h-24 object-cover rounded-full shadow-lg mx-auto mb-4 border-4 border-green-300">
+      <h3 class="text-xl font-semibold mb-2">Китайская философия</h3>
+      <p class="text-gray-600">Тончайший баланс Инь и Ян, пряные оттенки и чай как искусство расслабления и созерцания.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-yellow-50 py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Наша история</h2>
+    <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+      Всё началось с мечты объединить родные и любимые вкусы Востока. Основатели <span class="text-yellow-500 font-semibold">AsiyaSoul</span> — путешественники, повара и просто мечтатели, решили подарить людям не просто еду, а атмосферу. Так родилось место, где каждый может почувствовать себя в сердце Азии.
+    </p>
+  </div>
+</section>
+
+<section class="bg-white py-12 px-6">
+  <div class="max-w-3xl mx-auto text-center italic text-gray-600 text-lg md:text-xl" data-aos="zoom-in">
+    “Еда — это не просто вкус, это память о доме, голос традиции и музыка души.”
+    <br><span class="not-italic text-sm text-gray-500 mt-2 block">— из философии AsiyaSoul</span>
+  </div>
+</section>
+
+<section class="bg-gray-100 py-16 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div data-aos="fade-up">
+      <h3 class="text-2xl md:text-3xl text-yellow-500 font-bold">15+</h3>
+      <p class="text-gray-600 text-sm md:text-base">Уникальных авторских блюд</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl md:text-3xl text-yellow-500 font-bold">3 культуры</h3>
+      <p class="text-gray-600 text-sm md:text-base">объединены в одном меню</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-2xl md:text-3xl text-yellow-500 font-bold">100%</h3>
+      <p class="text-gray-600 text-sm md:text-base">натуральные ингредиенты</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-2xl md:text-3xl text-yellow-500 font-bold">365 дней</h3>
+      <p class="text-gray-600 text-sm md:text-base">гостеприимства в году</p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-black text-white py-6 mt-20">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="text-sm">© 2025 AsiyaSoul. Все права защищены.</p>
+    <p class="text-xs text-gray-400 mt-1">Разработано с любовью и чашкой чая 💛</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 1000 });
+</script>
+
+</body>
+</html>

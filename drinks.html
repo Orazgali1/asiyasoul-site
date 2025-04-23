@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Меню напитков ресторана AsiyaSoul — традиционные напитки Японии, Китая и Кореи.">
+  <title>Напитки — AsiyaSoul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    @media (max-width: 768px) {
+      header nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      header h1, h2 {
+        font-size: 1.8rem;
+      }
+    }
+    @media (max-width: 480px) {
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-black text-white p-4 flex flex-wrap md:flex-nowrap justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl md:text-2xl font-bold tracking-wide w-full md:w-auto text-center md:text-left mb-4 md:mb-0">AsiyaSoul</h1>
+    <nav class="flex flex-wrap justify-center md:justify-end gap-4 w-full md:w-auto">
+      <a href="index.html" class="hover:text-yellow-400 transition">Главная</a>
+      <a href="about.html" class="hover:text-yellow-400 transition">О нас</a>
+      <a href="menu.html" class="hover:text-yellow-400 transition">Меню</a>
+      <a href="gallery.html" class="hover:text-yellow-400 transition">Галерея</a>
+      <a href="contact.html" class="hover:text-yellow-400 transition">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="bg-yellow-100 text-gray-800 py-4 px-6 text-center shadow-inner">
+    <p class="mb-2 font-semibold text-lg">Выберите кухню:</p>
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
+      <a href="japanese.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Японская</a>
+      <a href="chinese.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Китайская</a>
+      <a href="korean.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition">Корейская</a>
+      <a href="drinks.html" class="bg-white hover:bg-yellow-200 text-black font-medium px-4 py-2 rounded-xl transition font-semibold">Напитки</a>
+    </div>
+  </div>
+
+  <section class="py-16 px-4 md:px-6 bg-gray-100 flex-grow">
+    <div class="max-w-7xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Традиционные напитки 🍵</h2>
+      <p class="text-gray-600">Японские, китайские и корейские напитки — от чая маття до освежающего боричха.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <!-- Маття -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.unsplash.com/photo-1582785513054-8d1bf9d69c1a?q=80&w=1935&auto=format&fit=crop" alt="Маття" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Маття 🍵</h3>
+    <p class="text-gray-700 mb-2">Японский зелёный чай в порошке, насыщенный антиоксидантами.</p>
+    <p class="text-yellow-600 font-semibold">900 KZT</p>
+  </div>
+
+  <!-- Чай Улун -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/3641659/pexels-photo-3641659.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Чай Улун" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Чай Улун 🍂</h3>
+    <p class="text-gray-700 mb-2">Китайский полууксусный чай с богатым ароматом и вкусом.</p>
+    <p class="text-yellow-600 font-semibold">800 KZT</p>
+  </div>
+
+  <!-- Имбирный чай -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/6962854/pexels-photo-6962854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Имбирный чай" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Имбирный чай 🫖</h3>
+    <p class="text-gray-700 mb-2">Корейский согревающий чай с мёдом и лимоном.</p>
+    <p class="text-yellow-600 font-semibold">750 KZT</p>
+  </div>
+
+  <!-- Боричха -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Боричха" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Боричха 🌾</h3>
+    <p class="text-gray-700 mb-2">Корейский ячменный чай, освежающий и без кофеина.</p>
+    <p class="text-yellow-600 font-semibold">700 KZT</p>
+  </div>
+
+  <!-- Юджа-ча -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/29097085/pexels-photo-29097085.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Юджа-ча" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Юджа-ча 🍊</h3>
+    <p class="text-gray-700 mb-2">Коре́йский цитрусовый чай из юдзы — ароматный и бодрящий.</p>
+    <p class="text-yellow-600 font-semibold">850 KZT</p>
+  </div>
+
+  <!-- Жасминовый чай -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/29632204/pexels-photo-29632204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Жасминовый чай" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Жасминовый чай 🌼</h3>
+    <p class="text-gray-700 mb-2">Китайский чай с нежным ароматом жасмина. Лёгкий и расслабляющий.</p>
+    <p class="text-yellow-600 font-semibold">750 KZT</p>
+  </div>
+
+  <!-- Танганька -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/1304542/pexels-photo-1304542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Танганька" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Танганька 🍹</h3>
+    <p class="text-gray-700 mb-2">Китайский напиток из ферментированных плодов сандала. Освежает и бодрит.</p>
+    <p class="text-yellow-600 font-semibold">850 KZT</p>
+  </div>
+
+  <!-- Лаванда -->
+  <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+    <img src="https://images.pexels.com/photos/9807612/pexels-photo-9807612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Лаванда" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Лаванда 🍇</h3>
+    <p class="text-gray-700 mb-2">Успокаивающий цветочный чай, идеален для вечеров и отдыха.</p>
+    <p class="text-yellow-600 font-semibold">1200 KZT</p>
+  </div>
+  
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <img src="images/jjj.png" alt="Сироп из лотоса" class="rounded-xl mb-4 w-full h-48 object-cover">
+        <h3 class="text-2xl font-semibold mb-2">Сироп из лотоса 🌸</h3>
+        <p class="text-gray-700 mb-2">Китайский напиток на основе сока цветов лотоса. Часто подаётся холодным.</p>
+        <p class="text-yellow-600 font-semibold">900 KZT</p>
+      </div>
+    
+    </div>
+  </section>
+
+  <footer class="bg-black text-white text-center py-6 text-sm">
+    © 2025 AsiyaSoul. Все права защищены. <br>
+    Создано с душой и стилем — <span class="text-yellow-400 font-semibold">Нургалиев Оразгали</span>.
+  </footer>
+</body>
+</html>
